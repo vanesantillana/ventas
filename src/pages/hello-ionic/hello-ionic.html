@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Juguetes de Navidad</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <ion-label><ion-icon name="search"></ion-icon></ion-label>
+    <ion-input class="busca" type="text" [(ngModel)]='text' 
+      (input)='onInputTime($event.target.value)' (change)='onChangeTime($event.target.value)' placeholder="Buscar...">
+    </ion-input>
+  </ion-item>
+  
+
+  <div *ngFor="let job of searchjobs">
+    <button (click)="buttonClick(job)" class="boton">
+              {{job.name}}
+    </button>
+          <!--<ion-col col-4>{{job.descrip}}</ion-col>
+          <ion-col col-4>{{job.precio}}</ion-col>
+          <ion-col col-4>{{job.venta}}</ion-col>-->
+      
+  </div>
+
+</ion-content>

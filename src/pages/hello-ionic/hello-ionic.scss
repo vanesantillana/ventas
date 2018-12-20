@@ -1,0 +1,23 @@
+page-hello-ionic {
+    .busca{
+        color: gray;
+        font-size: 1.6rem;
+        //border-bottom: 1px solid rgb(41, 182, 207);
+    }
+    .boton{
+        background-color: white;
+        color:rgb(41, 182, 207);
+        border: 1px solid rgb(41, 182, 207);
+        width: 100%;
+        font-size: 1.5rem;
+        padding: 10px 0 10px 10px;
+        margin: 5px 0 5px 0;
+        text-transform: capitalize;
+        display: block;
+        text-align: left;
+    }
+    .precio{
+        color: green;
+    }
+    
+}

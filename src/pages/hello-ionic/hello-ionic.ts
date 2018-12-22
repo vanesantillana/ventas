@@ -25,6 +25,7 @@ export class HelloIonicPage {
   
   onInputTime(val:string) {
     //console.log(val)
+    val = val.toLowerCase()
     this.searchjobs = [];
     for(var i = 0;i<this.jobs.length;i++) { 
       if(this.jobs[i].descrip.search(val)>-1){

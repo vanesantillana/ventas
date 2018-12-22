@@ -1,0 +1,30 @@
+<ion-header>
+
+    <ion-navbar>
+      <ion-buttons start>
+        <button ion-button (click)="dismiss()">Close</button>
+      </ion-buttons>
+      <ion-title>Resultado</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+    <ion-item>
+        <ion-icon name='basket' item-start></ion-icon>
+        {{producto.name.toUpperCase()}}
+        <ion-note item-end></ion-note>
+    </ion-item>
+    <ion-item>
+        <ion-icon name='cash' item-start></ion-icon>
+        S/. {{producto.venta}}
+        <ion-note item-end></ion-note>
+    </ion-item>
+    <ion-item>
+        <ion-icon name='bowtie' item-start></ion-icon>
+        Código
+        <ion-note item-end>{{producto.precio}}</ion-note>
+    </ion-item>
+  
+  </ion-content>
